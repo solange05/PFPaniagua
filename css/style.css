@@ -1,0 +1,257 @@
+/* Fuentes */
+/* Menú */
+
+/* 
+.menu{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.item{
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.menu .item a{
+    color:#4a167a;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    padding: 23px;
+}
+.menu .item:hover a{
+    background-color: #4a167a;
+    color: aliceblue;
+} */
+
+/* Views */
+/* imagen principal */
+
+
+/* index */
+/* #mainIndex{
+    margin: 0% 4% 0% 4%;
+} */
+/* #sectionIndex{
+    margin: 10%;
+} */
+/* .containervideo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5%;
+} */
+
+/* servicios */
+/* .sectionServicios{
+    text-align: center;
+    margin: 1% 3% 3% 3% ;
+    padding: 0% 3% 0% 3%;
+}
+.serviciosImg{
+    width: 200px;
+    height: auto;
+    margin-top: 2%;
+}
+.sectionServiciosUltimo{
+    margin-bottom: 10%;
+} */
+
+/* nosotros */
+/* #mainNosotros{
+    margin: 0% 4% 5% 4%;
+} */
+
+/* galería */
+/* #sectionGaleria{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+.galeriaImg{
+    width: 150px;
+    height: 150px;
+} */
+
+/* contacto */
+/* #mainForm{
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    sombreado (ver)
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.contactoSpace{
+    padding: 1%;
+}
+.add{
+    padding-bottom: 2%;
+}
+.footerContactoSpaceComentarios{
+    display: block;
+} */
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../assets/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Playfair Display', serif;
+}
+a{
+    color: black;
+}
+h1, h2, h3, h5{
+    color: blueviolet
+}
+h1, h2, h4{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h3{
+    margin-bottom: 18px;
+}
+p{
+    text-align: justify;
+}
+
+/* Header */
+.nav__logo{
+    width: 50px;
+}
+#header__nav{
+    background-image: url(../assets/img/fondo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: double;
+    border-bottom: double;
+}
+.nav-item a{
+    color: #4a167a;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.nav-item a:hover{
+    color: #7233ad;
+}
+.header__div--img{
+    width: 100%;
+    border-bottom: double;
+}
+
+/* Index */
+.container__iframe{
+    display: flex;
+    justify-content: center;
+}
+.container__iframe--uno{
+    margin-bottom: 3%;
+}
+
+/* Servicios */
+.section__div--containerImg{
+    display: flex;
+    justify-content: center;
+}
+.section__div--img{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.section__div--serviciosRow{
+    margin-top: 5%;
+}
+@media (max-width: 767px){
+    .section__div--img{
+        width: 200px;
+    }
+    .section__div--serviciosOrder{
+        order: -1;
+    }
+}
+
+/* Nosotros (nada) */
+
+/* Galería */
+#carouselExample{
+    border: solid;
+    color: #4a167a;
+    margin: 6%;
+    /* width: 50%; */
+}
+.gallery__img{
+    height: 350px;
+}
+.carousel-control-prev, .carousel-control-next{
+    background-color: #4a167a;
+}
+
+/* Contacto (nada) */
+
+/* Todo */
+.container{
+    margin-bottom: 6%;
+}
+
+/* footer */
+.card{
+    background-image: url(../assets/img/fondo1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top: double;
+}
+.redes{
+    padding: 5px;
+}
+.card-footer{
+    border-top: double;
+    text-align: center;
+}
+
+/* buttons */
+.navbar .container-fluid .d-flex .btn{
+    background-color: #4a167a;
+    color: aliceblue;
+    border: #7233ad
+}
+.navbar .container-fluid .d-flex .btn:hover{
+    background-color: #7233ad;
+    color: aliceblue;
+    border: #7233ad;
+}
+.card .card-body .btn{
+    background-color: #4a167a;
+    color: aliceblue;
+    margin-top: 18px;
+}
+.card .card-body .btn:hover{
+    background-color: #7233ad;
+    color: aliceblue;
+}
+#form button{
+    background-color: #4a167a;
+    color: aliceblue;
+    border: #7233ad
+}
+#form button:hover{
+    background-color: #7233ad;
+    color: aliceblue;
+}
+
