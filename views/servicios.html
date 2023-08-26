@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="En S-Nails te ofrecemos tres tipos de servicios. Esmaltado común, Semipermanentes y Esculpidas.">
+    <meta name="keywords" content="Esmaltado, Manicura, Servicios, Común, Semipermanentes, Esculpidas">
     <!-- Título -->
     <title>Servicios</title>
     <!-- Favicon -->
     <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
-    <!-- fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <!-- Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- CSS -->
@@ -70,12 +76,12 @@
                     <h2>Esmaltado común</h2>
                     <p>El esmaltado común o también conocido como el esmalte tradicional es el "normal" que todos conocemos. Es el más común que podemos encontrar. Su aplicación es mucho más sencilla que la de los otros tipos de esmaltes, ya que no se necesita equipo especializado y se usan menos productos. Es por ello por lo que el proceso de retirar este tipo de esmalte es mucho más sencillo, ya que este no se adhiere de una forma agresiva a la uña. Gracias a que se quita con facilidad, nos permite cambiar de color todas las veces que deseamos, sin tener que esperar. Además, gracias a que no se usan demasiados productos para su aplicación, suele ser un proceso más económico. Al ser el más común, hay más diferencia en sus productos. Hay muchos colores de los que elegir, así como diferentes acabados, como puede ser el mate. No es tan agresivo como otros productos, y no necesitas que la uña respire entre esmaltados. Sin embargo, al no ser de larga duración, se estropean con más facilidad. Todo depende de como lo uses. Por su aplicación, tardan más en secarse, por lo que si no has esperado el tiempo suficiente se estropearán. Es por esta razón por la que además consumen más tiempo, ya que tienes que esperar hasta que se hayan secado completamente.</p>
                 </div>
-                <div class="col-md-4 section__div--containerImg">
+                <div class="col-md-4 section__div--containerImg" data-aos="fade-left">
                     <img class="section__div--img" src="../assets/img/esmalte-comun.jpg" alt="esmaltecomun">
                 </div>
             </div>
             <div class="row section__div--serviciosRow">
-                <div class="col-md-4 section__div--containerImg">
+                <div class="col-md-4 section__div--containerImg" data-aos="fade-right">
                     <img class="section__div--img" src="../assets/img/esmalte-semi.jpg" alt="esmaltesemi">
                 </div>
                 <div class="col-md-8 section__div--serviciosOrder">
@@ -93,7 +99,7 @@
                         </ul>
                     </p>
                 </div>
-                <div class="col-md-4 section__div--containerImg">
+                <div class="col-md-4 section__div--containerImg" data-aos="fade-left">
                     <img class="section__div--img" src="../assets/img/esmalte-esculpida.jpg" alt="esmalteesculpida">
                 </div>
             </div>
@@ -141,3 +147,7 @@
     <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>
+
+<script>
+    AOS.init();
+  </script>

@@ -1,0 +1,28 @@
+/* Variable */
+$size: 54px;
+
+@mixin text{
+    text-align: center;
+}
+
+a{
+    color: black;
+}
+h1, h2, h3, h5{
+    color: blueviolet
+}
+
+h1, h2, h4{
+    @include text;
+}
+h1{
+    @include text;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+h3{
+    margin-bottom: $size/3;
+}
+p{
+    text-align: justify;
+}

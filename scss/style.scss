@@ -3,38 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-image: url(../assets/img/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: 'Playfair Display', serif;
-}
-a{
-    color: black;
-}
-h1, h2, h3, h5{
-    color: blueviolet
-}
 
-h1, h2, h4{
-    text-align: center;
-}
-h1{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 1%;
-}
-h3{
-    margin-bottom: 18px;
-}
-p{
-    text-align: justify;
-}
+@import "body";
+@import "words";
 
-.nav__logo{
-    width: 50px;
-}
+$primary-color: #4a167a;
+$size: 54px;
+$logo: true;
+$view: "mobile";
+
 #header__nav{
     background-image: url(../assets/img/fondo1.png);
     background-repeat: no-repeat;
@@ -43,15 +20,26 @@ p{
     border-top: double;
     border-bottom: double;
 }
-.nav-item{
-    a{
-        color: #4a167a;
-        text-transform: uppercase;font-weight: bolder;
-        &:hover{
-            color: #7233ad;
+
+.nav{
+    &__logo{
+        @if $logo == true{
+            width: 50px;
+        }
+    }
+    &-item{
+        a{
+            color: $primary-color;
+            text-transform: uppercase;
+            font-weight: bolder;
+            &:hover{
+                color: #7233ad;
+            }
         }
     }
 }
+
+
 .header__div--img{
     width: 100%;
     border-bottom: double;
@@ -79,30 +67,43 @@ p{
         margin-top: 5%;
     }
 }
-@media (max-width: 767px){
-    .section__div--img{
-        width: 200px;
+
+@if $view == "desktop"{
+    @media (min-width: 767px){
+        .section__div--img{
+            width: 300px;
+        }
+        .section__div--serviciosOrder{
+            order: -2;
+        }
     }
-    .section__div--serviciosOrder{
-        order: -1;
+}
+@else{
+    @media (max-width: 767px){
+        .section__div--img{
+            width: 200px;
+        }
+        .section__div--serviciosOrder{
+            order: -1;
+        }
     }
 }
 
 #carouselExample{
     border: solid;
-    color: #4a167a;
+    color: $primary-color;
     margin: 6%;
 }
 .gallery__img{
     height: 350px;
 }
-.carousel-control{
-    &-prev{
-        background-color: #4a167a;
-    }
-    &-next{
-        background-color: #4a167a;
-    }
+
+.carousel-control-prev{
+    background-color: $primary-color;
+}
+
+.carousel-control-next{
+    @extend .carousel-control-prev;
 }
 
 .container{
@@ -128,7 +129,7 @@ p{
     .container-fluid{
         .d-flex{
             .btn{
-                background-color: #4a167a;
+                background-color: $primary-color;
                 color: aliceblue;
                 border: #7233ad;
                 &:hover{
@@ -143,9 +144,9 @@ p{
 .card{
     .card-body{
         .btn{
-            background-color: #4a167a;
+            background-color: $primary-color;
             color: aliceblue;
-            margin-top: 18px;
+            margin-top: $size/3;
             &:hover{
                 background-color: #7233ad;
                 color: aliceblue;
@@ -155,7 +156,7 @@ p{
 }
 #form{
     button{
-        background-color: #4a167a;
+        background-color: $primary-color;
         color: aliceblue;
         border: #7233ad;
         &:hover{
